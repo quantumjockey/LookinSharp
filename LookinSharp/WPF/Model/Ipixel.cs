@@ -14,6 +14,6 @@ namespace LookinSharp.WPF.Model
         Point Coordinate { get; }
         string Tag { get; }
         double Temperature { get; }
-        string ToolTip { get; }
+        string Description { get; }
     }
 }

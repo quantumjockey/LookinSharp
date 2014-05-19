@@ -47,7 +47,6 @@
     <Compile Include="WPF\Model\Ipixel.cs" />
     <Compile Include="WPF\Model\pixelBase.cs" />
     <Compile Include="WPF\ViewModel\DataRenderingViewModel.cs" />
-    <Compile Include="WPF\ViewModel\PixelViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="OpenGL\" />

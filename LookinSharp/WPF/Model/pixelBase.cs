@@ -20,6 +20,12 @@ namespace LookinSharp.WPF.Model
             private set;
         }
 
+        public string Description
+        {
+            get;
+            private set;
+        }
+
         public string Tag
         {
             get;
@@ -27,12 +33,6 @@ namespace LookinSharp.WPF.Model
         }
 
         public double Temperature
-        {
-            get;
-            private set;
-        }
-
-        public string ToolTip
         {
             get;
             private set;
@@ -47,9 +47,9 @@ namespace LookinSharp.WPF.Model
         public pixelBase(double _x, double _y, double _temperature, string _toolTip)
         {
             this.Coordinate = new Point(_x, _y);
+            this.Description = _toolTip;
             this.Tag = Guid.NewGuid().ToString();
             this.Temperature = _temperature;
-            this.ToolTip = _toolTip;
         }
 
         #endregion

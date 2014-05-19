@@ -153,7 +153,7 @@ namespace LookinSharp.WPF.ViewModel
 
         private void AddPixel(double x, double y, double xScale, double yScale, ref Canvas _renderedImage, Ipixel _data, int _maxR, int _maxG, int _maxB)
         {
-            PixelViewModel xrfPix = new PixelViewModel(_data, xScale, yScale);
+            PixelWrapper xrfPix = new PixelWrapper(_data, xScale, yScale);
             Canvas.SetTop(xrfPix.Graphic, y);
             Canvas.SetLeft(xrfPix.Graphic, x);
             xrfPix.Graphic.Fill = new SolidColorBrush(_generateColorAction(_data.Temperature, _maxR, _maxG, _maxB));
@@ -225,6 +225,50 @@ namespace LookinSharp.WPF.ViewModel
         {
             Rectangle pix = sender as Rectangle;
             _mouseRightAction(pix);
+        }
+
+        #endregion
+
+        ////////////////////////////////////////
+        #region Child Classes
+
+        class PixelWrapper
+        {
+            ////////////////////////////////////////
+            #region Properties
+
+            public Rectangle Graphic
+            {
+                get;
+                private set;
+            }
+
+            #endregion
+
+            ////////////////////////////////////////
+            #region Constructor
+
+            public PixelWrapper(Ipixel _data, double _xScale, double _yScale)
+            {
+                Graphic = InitializeRectangle(_yScale, _xScale);
+                Graphic.Tag = _data.Tag;
+                Graphic.ToolTip = _data.Description;
+            }
+
+            #endregion
+
+            ////////////////////////////////////////
+            #region Supporting Methods
+
+            private Rectangle InitializeRectangle(double _height, double _width)
+            {
+                Rectangle rec = new Rectangle();
+                rec.Height = _height;
+                rec.Width = _width;
+                return rec;
+            }
+
+            #endregion
         }
 
         #endregion
