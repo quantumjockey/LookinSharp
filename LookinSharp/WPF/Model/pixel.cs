@@ -9,7 +9,7 @@ using System.Windows;
 
 namespace LookinSharp.WPF.Model
 {
-    public class pixelBase : Ipixel
+    public class pixel : Ipixel
     {
         ////////////////////////////////////////
         #region Properties
@@ -43,9 +43,9 @@ namespace LookinSharp.WPF.Model
         ////////////////////////////////////////
         #region Constructor
 
-        public pixelBase(double _x, double _y, double _temperature) : this(_x, _y, _temperature, String.Empty) { }
+        public pixel(double _x, double _y, double _temp) : this(_x, _y, _temp, String.Empty) { }
 
-        public pixelBase(double _x, double _y, double _temperature, string _toolTip)
+        public pixel(double _x, double _y, double _temperature, string _toolTip)
         {
             this.Coordinate = new Point(_x, _y);
             this.Description = _toolTip;
