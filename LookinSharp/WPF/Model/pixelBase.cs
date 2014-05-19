@@ -23,7 +23,7 @@ namespace LookinSharp.WPF.Model
         public string Description
         {
             get;
-            private set;
+            protected set;
         }
 
         public string Tag
@@ -43,6 +43,7 @@ namespace LookinSharp.WPF.Model
         ////////////////////////////////////////
         #region Constructor
 
+        public pixelBase(double _x, double _y, double _temperature) : this(_x, _y, _temperature, String.Empty) { }
 
         public pixelBase(double _x, double _y, double _temperature, string _toolTip)
         {

@@ -14,7 +14,7 @@ using WpfHelper.ViewModel.Workspaces;
 
 namespace LookinSharp.WPF.ViewModel
 {
-    public class DataRenderingViewModel : WorkspaceViewModel
+    public class ImageGraphViewModel : WorkspaceViewModel
     {
         ////////////////////////////////////////
         #region Constants
@@ -92,7 +92,7 @@ namespace LookinSharp.WPF.ViewModel
         ////////////////////////////////////////
         #region Constructor
 
-        public DataRenderingViewModel(int _size, Action<Rectangle> mouseLeftAction, Action<Rectangle> mouseRightAction,
+        public ImageGraphViewModel(int _size, Action<Rectangle> mouseLeftAction, Action<Rectangle> mouseRightAction,
             Func<double, int, int, int, Color> generateColorAction)
         {
             _generateColorAction = generateColorAction;
@@ -234,7 +234,6 @@ namespace LookinSharp.WPF.ViewModel
 
         class PixelWrapper
         {
-            ////////////////////////////////////////
             #region Properties
 
             public Rectangle Graphic
@@ -245,7 +244,6 @@ namespace LookinSharp.WPF.ViewModel
 
             #endregion
 
-            ////////////////////////////////////////
             #region Constructor
 
             public PixelWrapper(Ipixel _data, double _xScale, double _yScale)
@@ -257,7 +255,6 @@ namespace LookinSharp.WPF.ViewModel
 
             #endregion
 
-            ////////////////////////////////////////
             #region Supporting Methods
 
             private Rectangle InitializeRectangle(double _height, double _width)

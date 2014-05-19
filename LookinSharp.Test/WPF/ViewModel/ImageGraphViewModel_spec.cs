@@ -12,13 +12,13 @@ namespace LookinSharp.Test.WPF.ViewModel
     /// Summary description for DataRenderingWorkspaceViewModel_spec
     /// </summary>
     [TestClass]
-    public class DataRenderingViewModel_spec
+    public class ImageGraphViewModel_spec
     {
         ////////////////////////////////////////
         #region Constructor (Auto-generated)
 
 
-        public DataRenderingViewModel_spec()
+        public ImageGraphViewModel_spec()
         {
             //
             // TODO: Add constructor logic here
