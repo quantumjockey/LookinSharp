@@ -151,7 +151,7 @@ namespace LookinSharp.WPF.ViewModel
         #region Supporting Methods
 
 
-        private void AddPixel(double x, double y, double xScale, double yScale, ref Canvas _renderedImage, ref Ipixel _data, int _maxR, int _maxG, int _maxB)
+        private void AddPixel(double x, double y, double xScale, double yScale, ref Canvas _renderedImage, Ipixel _data, int _maxR, int _maxG, int _maxB)
         {
             PixelViewModel xrfPix = new PixelViewModel(_data, xScale, yScale);
             Canvas.SetTop(xrfPix.Graphic, y);
@@ -189,13 +189,13 @@ namespace LookinSharp.WPF.ViewModel
                 _effectiveImage.Height = _effectiveImage.Width = imageSize;
             }
 
-            AddPixel(0, 0, pixelScaleX, pixelScaleY, ref _effectiveImage, ref imageGrid[0][0], maxR, maxG, maxB);
+            AddPixel(0, 0, pixelScaleX, pixelScaleY, ref _effectiveImage, imageGrid[0][0], maxR, maxG, maxB);
 
             for (int i = 0; i < imageRows; i++)
             {
                 for (int j = 0; j < imageColumns; j++)
                 {
-                    AddPixel(j * pixelScaleX, i * pixelScaleY, pixelScaleX, pixelScaleY, ref _effectiveImage, ref imageGrid[i][j], maxR, maxG, maxB);
+                    AddPixel(j * pixelScaleX, i * pixelScaleY, pixelScaleX, pixelScaleY, ref _effectiveImage, imageGrid[i][j], maxR, maxG, maxB);
                 }
             }
 
