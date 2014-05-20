@@ -92,6 +92,13 @@ namespace LookinSharp.WPF.ViewModel
         ////////////////////////////////////////
         #region Constructor
 
+        /// <summary>
+        /// Creates a new two-dimensional rendering of a field of data.
+        /// </summary>
+        /// <param name="_size">The size of the graph, in pixels.</param>
+        /// <param name="mouseLeftAction">The action performed via the left mouse button when cursor is over a pixel within the graph.</param>
+        /// <param name="mouseRightAction">The action performed via the right mouse button when cursor is over a pixel within the graph.</param>
+        /// <param name="generateColorAction">Method that generates the temperature-derived hue for each pixel.</param>
         public ImageGraphViewModel(int _size, Action<Rectangle> mouseLeftAction, Action<Rectangle> mouseRightAction,
             Func<double, int, int, int, Color> generateColorAction)
         {
@@ -107,13 +114,18 @@ namespace LookinSharp.WPF.ViewModel
         ////////////////////////////////////////
         #region Public Methods
 
-
+        /// <summary>
+        /// Clears all graphics from the image graph.
+        /// </summary>
         public void Clear()
         {
             RenderedImage.Children.Clear();
         }
 
-
+        /// <summary>
+        /// Refreshes the graph using data from a single-layer image.
+        /// </summary>
+        /// <param name="imageGrid">An array containing image data.</param>
         public void RefreshImage(Ipixel[][] imageGrid)
         {
             if (RenderedImage != null)
@@ -128,7 +140,11 @@ namespace LookinSharp.WPF.ViewModel
             }
         }
 
-        public void RefreshImage(List<Ipixel[][]> imageCollection)
+        /// <summary>
+        /// Refreshes the graph using data from a multi-layer image.
+        /// </summary>
+        /// <param name="imageCollection">A list containing layers of image data.</param>
+        public void RefreshLayeredImage(List<Ipixel[][]> imageCollection)
         {
             if (RenderedImage != null)
             {
