@@ -27,6 +27,7 @@ namespace LookinSharp.WPF.ViewModel
         #region Generic Fields
 
         // Workspace-Specific
+        private Canvas _effectiveImage;
         private Ipixel[][] _imageBuffer;
         private int _imageSize;
         private Canvas _renderedImage;
@@ -129,9 +130,7 @@ namespace LookinSharp.WPF.ViewModel
         public void RefreshImage(Ipixel[][] imageGrid)
         {
             if (RenderedImage != null)
-            {
                 Clear();
-            }
 
             if (imageGrid != null)
             {
@@ -147,9 +146,7 @@ namespace LookinSharp.WPF.ViewModel
         public void RefreshLayeredImage(List<Ipixel[][]> imageCollection)
         {
             if (RenderedImage != null)
-            {
                 Clear();
-            }
 
             foreach (Ipixel[][] imageGrid in imageCollection)
             {
@@ -182,7 +179,8 @@ namespace LookinSharp.WPF.ViewModel
 
         private Canvas RenderImage(Ipixel[][] imageGrid, double imageSize, int maxR, int maxG, int maxB)
         {
-            Canvas _effectiveImage = new Canvas();
+            if(_effectiveImage == null)
+                _effectiveImage = new Canvas();
 
             int imageRows = imageGrid.Length;
             int imageColumns = imageGrid[0].Length;
@@ -204,8 +202,6 @@ namespace LookinSharp.WPF.ViewModel
 
                 _effectiveImage.Height = _effectiveImage.Width = imageSize;
             }
-
-            AddPixel(0, 0, pixelScaleX, pixelScaleY, ref _effectiveImage, imageGrid[0][0], maxR, maxG, maxB);
 
             for (int i = 0; i < imageRows; i++)
             {
@@ -229,13 +225,11 @@ namespace LookinSharp.WPF.ViewModel
             SelectedPixelTag = pix.Tag.ToString();
         }
 
-
         void Graphic_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             Rectangle pix = sender as Rectangle;
             _mouseLeftAction(pix);
         }
-
 
         void Graphic_MouseRightButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
