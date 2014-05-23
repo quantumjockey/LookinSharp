@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="a39c6257-d180-4ec1-81c0-395d1fb45c19" name="pixel" linkedPackageId="e1c43b46-23a9-4c8b-a81f-242f1c906339" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="e974765f-78c3-451b-84f6-0508e167288b">
+      <profileInstance Id="05bf88fd-6c01-4f32-b849-29daf2273605" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="f3d43acc-b9f4-4a2a-97d0-2368c5df3c27">
+      <profileInstance Id="65c16e9b-d62f-4f12-8dca-960fd66ed9bb" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5e40751d-d21f-490d-8b14-0027fd58049e" name="pixel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="77e81fd5-7b27-4c47-acf4-4a4fd000bf17" />
+        <suppliersInternal>
+          <interfaceRealization Id="654f231b-1541-4ca7-8db9-6aef45ee9f6e">
+            <interfaceMoniker Id="52b7f3be-5d89-4a23-817c-34d3e7a4653f" LastKnownName="Ipixel" />
+            <elementDefinition Id="d6e01668-bb14-45bf-8561-2a74ab95953c" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="96179784-b3d7-4aaa-86ae-be585989c909" name="Coordinate" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7117af0d-e83f-442e-b590-03160f8fd942" />
+          </property>
+          <property Id="b074aba6-339d-4309-a469-5d598cacc85b" name="Tag" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="289325dd-b07e-4a8a-8f05-af89ce5388c1" />
+          </property>
+          <property Id="ae379d4f-a72f-4510-9c34-26c58f05c32c" name="Temperature" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9e1112bd-d732-4844-b333-4876aa366cbd" />
+          </property>
+          <property Id="6396fa2e-e182-4390-8ce4-dc09332f291c" name="Description" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="10f250fa-cda8-435d-b3f8-58b7dfff9dde" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="52b7f3be-5d89-4a23-817c-34d3e7a4653f" name="Ipixel" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e9785908-9ec5-49ad-8073-e9499e9a6976" />
+        <ownedAttributes>
+          <property Id="5154de1f-e27f-4fc8-aa5e-f1b1b8f1fbb9" name="Coordinate" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="98069146-75bf-4aa3-8237-8ed17934b17b" />
+          </property>
+          <property Id="432aea68-f2d3-486f-b741-6b2b87d026f3" name="Description" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="478c67d4-bc41-44db-a986-1d2c40adb930" />
+          </property>
+          <property Id="0813bf23-001e-47ad-aadb-b74268a58183" name="Tag" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="61b12884-8195-46f4-b9cb-01138da6e37c" />
+          </property>
+          <property Id="d3c5f7a8-0a3b-4de8-92b1-af40c41eebaf" name="Temperature" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="753541ff-1430-487a-9c50-1418fa54a83e" />
+          </property>
+        </ownedAttributes>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="e1c43b46-23a9-4c8b-a81f-242f1c906339" name="LookinSharp.Model">
+    <elementDefinition Id="2723f158-9e5b-4dbc-96b0-37791df38b36" />
+  </package>
+</logicalClassDesignerModel>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ImageGraphViewModel">
+  <logicalClassDesignerModelMoniker Id="20921629-933e-44ce-ae6f-dad7b124e852" />
+  <nestedChildShapes>
+    <classShape Id="795c2d62-c046-40c0-ac30-71d48c40578f" absoluteBounds="3.75, 2.625, 3.5, 1.8632812052965164" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="5e5a1996-e8c8-4d99-9284-5f466b4ae904" LastKnownName="ImageGraphViewModel" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="6f0a6105-c231-46e3-a165-f2de6039e10d" absoluteBounds="3.7649999999999997, 3.015, 3.4699999999999998, 0.68164060264825832" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="e1ab3f42-87f1-4598-9862-89b0dc2bf3b1" absoluteBounds="3.7649999999999997, 3.7066406026482586, 3.4699999999999998, 0.68164060264825821" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

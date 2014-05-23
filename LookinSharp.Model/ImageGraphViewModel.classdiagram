@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="20921629-933e-44ce-ae6f-dad7b124e852" name="ImageGraphViewModel" linkedPackageId="845ef899-8a28-41a9-861e-86ab2cbee931" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="eaabe7e4-864a-431b-a0f2-802fa7991f84">
+      <profileInstance Id="2447d0da-c77a-49a8-8e3a-02e0cebbac51" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="220c9b0b-242d-4a43-851c-da21f1a638a0">
+      <profileInstance Id="d9fcfd06-a5f6-4123-9f2c-cfb13416c625" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5e5a1996-e8c8-4d99-9284-5f466b4ae904" name="ImageGraphViewModel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="eb6ceab4-0093-4a64-b970-6638e9015fbd" />
+        <ownedAttributesInternal>
+          <property Id="1a5309b0-ff2f-4cf0-bafe-1450ac56c8c1" name="RenderedImage" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="39cfaba6-80ef-4537-96ae-d0ba6e16683e" />
+          </property>
+          <property Id="8a3665ac-2023-4b2e-b814-953894b9ff2f" name="RenderToScale" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c7cf0e61-2ed7-4911-9ac0-0587a3214d8b" />
+          </property>
+          <property Id="bc3f91e9-8383-48d3-a359-bc9a81ffa8bb" name="SelectedPixelTag" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b8440d24-1751-4255-a3ff-0b50c26a7321" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="d824f71a-ce7c-4241-822e-120005f96ccf" name="Clear" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="66a5c350-476c-4f96-b9d1-e8b009a73d55" />
+          </operation>
+          <operation Id="5e486075-7556-48a7-8b55-2b36e02cf910" name="RefreshImage" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3329673d-8375-4bf2-9265-f169332913f2" />
+          </operation>
+          <operation Id="790e8b0a-85db-43b9-984d-80d814cb73a1" name="RefreshLayeredImage" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f3eaf03b-1201-4866-812e-1243f8748e0f" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="845ef899-8a28-41a9-861e-86ab2cbee931" name="LookinSharp.Model">
+    <elementDefinition Id="2723f158-9e5b-4dbc-96b0-37791df38b36" />
+  </package>
+</logicalClassDesignerModel>

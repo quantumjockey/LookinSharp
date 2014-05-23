@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="pixel">
+  <logicalClassDesignerModelMoniker Id="a39c6257-d180-4ec1-81c0-395d1fb45c19" />
+  <nestedChildShapes>
+    <classShape Id="42777196-c62d-4ef5-ad67-4228b48c782e" absoluteBounds="1.875, 1.875, 3.125, 1.5429687152306237" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="5e40751d-d21f-490d-8b14-0027fd58049e" LastKnownName="pixel" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="09f12cf6-5a4c-465d-bd1f-467faf773794" absoluteBounds="1.8900000000000001, 2.265, 3.0949999999999998, 0.84179684768120444" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="68e85481-f924-4734-a7b4-62cf73b6843e" absoluteBounds="1.8900000000000001, 3.1167968476812042, 3.0949999999999998, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <interfaceShape Id="c08958da-9bd8-4ea2-9c33-ac891ab669c2" absoluteBounds="6.625, 1.875, 3, 1.5429687152306237" hideQualifiedName="false" increaseHeight="0" customColor="207, 223, 191">
+      <interfaceMoniker Id="52b7f3be-5d89-4a23-817c-34d3e7a4653f" LastKnownName="Ipixel" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="c540de12-b024-4190-912d-6a7f1d87edf4" absoluteBounds="6.64, 2.265, 2.9699999999999998, 0.84179684768120444" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="ce4e6839-a65e-4525-b990-de54fb4c0905" absoluteBounds="6.64, 3.1167968476812042, 2.9699999999999998, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </interfaceShape>
+    <realizationConnector edgePoints="[(5 : 2.64648435761531); (6.625 : 2.64648435761531)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" showAsLollipop="false">
+      <interfaceRealizationMoniker Id="654f231b-1541-4ca7-8db9-6aef45ee9f6e" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="42777196-c62d-4ef5-ad67-4228b48c782e" />
+        <interfaceShapeMoniker Id="c08958da-9bd8-4ea2-9c33-ac891ab669c2" />
+      </nodes>
+    </realizationConnector>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>
