@@ -22,12 +22,19 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
-    <Content Include="ImageGraphViewModel.classdiagram">
+    <Content Include="Class Diagrams\ImageGraphViewModel.classdiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="ImageGraphViewModel.classdiagram.layout">
+    <Content Include="Class Diagrams\ImageGraphViewModel.classdiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>ImageGraphViewModel.classdiagram</DependentUpon>
+      <DependentUpon>Class Diagrams\ImageGraphViewModel.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Class Diagrams\pixel.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Class Diagrams\pixel.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Class Diagrams\pixel.classdiagram</DependentUpon>
     </Content>
     <Content Include="ModelDefinition\Package1_2239.uml">
       <SubType>Content</SubType>
@@ -44,17 +51,12 @@
     <Content Include="ModelDefinition\Package_2240.uml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="pixel.classdiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="pixel.classdiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>pixel.classdiagram</DependentUpon>
-    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\LookinSharp.Model.uml">
       <SubType>Content</SubType>
     </Content>
+    <Folder Include="Class Diagrams" />
+    <Folder Include="Layer Diagrams" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\WpfHelper\WpfHelper\WpfHelper.csproj">
@@ -65,5 +67,18 @@
       <Name>LookinSharp</Name>
       <Project>{10e4593a-92db-43b3-9ca1-6029f01b8572}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Validate Include="Layer Diagrams\LookinSharp.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="Layer Diagrams\LookinSharp.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Layer Diagrams\LookinSharp.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="Layer Diagrams\LookinSharp.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>Layer Diagrams\LookinSharp.layerdiagram</DependentUpon>
+    </Validate>
   </ItemGroup>
 </Project>

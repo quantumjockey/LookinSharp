@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="b2c31687-6e33-4402-8480-19b60de12899" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="0293fb21-a273-4a38-a810-257db641c9ee" name="WpfHelper">
+      <references>
+        <reference Id="c0d10508-016b-43a4-8446-ad42c24ecfac" name="WpfHelper">
+          <ArtifactNode Label="WpfHelper" Category="CodeSchema_Project" Id="(Assembly=../../../WpfHelper/WpfHelper/WpfHelper.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=WpfHelper)" Label="WpfHelper.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="7ffb4529-e847-48a5-a009-aea616a0f4b3" name="LookinSharp">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="ea51e43e-1834-4cd5-9b53-674a65ea520a" direction="Forward">
+          <layerMoniker Id="0293fb21-a273-4a38-a810-257db641c9ee" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="c6032168-bd47-47aa-adce-4b98edf11dc7" name="LookinSharp">
+          <ArtifactNode Label="LookinSharp" Category="CodeSchema_Project" Id="(Assembly=../../LookinSharp/LookinSharp.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=LookinSharp)" Label="LookinSharp.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+  </layers>
+</layerModel>
