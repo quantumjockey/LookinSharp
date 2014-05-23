@@ -22,9 +22,34 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="ModelDefinition\Package1_2239.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_2239.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_2239.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2239.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2240.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\LookinSharp.Model.uml">
       <SubType>Content</SubType>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\WpfHelper\WpfHelper\WpfHelper.csproj">
+      <Name>WpfHelper</Name>
+      <Project>{473a9def-8948-42a0-b127-aab5bcbc5790}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\LookinSharp\LookinSharp.csproj">
+      <Name>LookinSharp</Name>
+      <Project>{10e4593a-92db-43b3-9ca1-6029f01b8572}</Project>
+    </ProjectReference>
   </ItemGroup>
 </Project>
