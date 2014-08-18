@@ -9,6 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LookinSharp.Test", "LookinS
 EndProject
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "LookinSharp.Model", "LookinSharp.Model\LookinSharp.Model.modelproj", "{DDFA01A2-1EF9-495F-AA96-4F0085963174}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1397606C-8B1B-4B76-8CC7-DFFBAF3EF3A2}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

@@ -48,6 +48,9 @@ namespace LookinSharp.WPF.ViewModel
         ////////////////////////////////////////
         #region Properties
 
+        /// <summary>
+        /// A WPF canvas containing rendered data.
+        /// </summary>
         public Canvas RenderedImage
         {
             get
@@ -61,6 +64,9 @@ namespace LookinSharp.WPF.ViewModel
             }
         }
 
+        /// <summary>
+        /// Renders the image on a pixel-per-datapoint basis.
+        /// </summary>
         public bool RenderToScale
         {
             get
@@ -75,6 +81,9 @@ namespace LookinSharp.WPF.ViewModel
             }
         }
 
+        /// <summary>
+        /// Guid tag (or other unique string value) associated with the mouse/touch-selected pixel.
+        /// </summary>
         public string SelectedPixelTag
         {
             get
